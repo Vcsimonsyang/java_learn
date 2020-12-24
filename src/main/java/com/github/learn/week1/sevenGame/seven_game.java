@@ -1,9 +1,10 @@
 package com.github.learn.week1.sevenGame;
 
+import com.github.learn.week1.array.array2;
 public class seven_game {
     public static void main(String[] args) {
         for(int i = 0; i < 100; i ++){
-           int[] number =  position(i);
+           int[] number =  array2.position(i);
             int out1 = 0;
            for(int j = 0; j < number.length; j++){
                if(number[j] == 7){
@@ -16,10 +17,10 @@ public class seven_game {
            }
         }
     }
-    public static int[] position(int a){
-        int hundres = a / 100;
-        int tens = a / 10 % 10;
-        int unit = a % 10;
-        return new int[] {hundres,tens,unit};
-    }
+//    public static int[] position(int a){
+//        int hundres = a / 100;
+//        int tens = a / 10 % 10;
+//        int unit = a % 10;
+//        return new int[] {hundres,tens,unit};
+//    }
 }
