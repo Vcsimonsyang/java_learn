@@ -28,7 +28,7 @@ public class studentManageSystem {
                     System.out.println("Delete student success");
                     break;
                 case "3":
-                    delete(students);
+                    modify(students);
                     break;
                 case "4":
                     checkAllStudents(students);
@@ -93,5 +93,8 @@ public class studentManageSystem {
                 System.out.println("Id not exist please check your info.");
             }
         }
+    }
+    public static void modify(ArrayList<student> array){
+        
     }
 }
