@@ -95,6 +95,22 @@ public class studentManageSystem {
         }
     }
     public static void modify(ArrayList<student> array){
-        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("please enter the student's name or ID that you want to change ");
+        String input = sc.nextLine();
+        for(int i = 0; i < array.size(); i++){
+            student s = array.get(i);
+            if(s.getId().equals(input) || s.getName().equals(input)){
+                System.out.println("please enter the age");
+                String age = sc.nextLine();
+                s.setAge(age);
+                System.out.println("please enter the address");
+                String address = sc.nextLine();
+                s.setAddress(address);
+                array.set(i,s);
+                break;
+            }
+        }
+        System.out.println("modify success");
     }
 }
